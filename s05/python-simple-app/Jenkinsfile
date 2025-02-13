@@ -2,7 +2,7 @@ pipeline {
     agent {
         label 'master'
     }
-    stages{
+    stages {
         stage('Install pip3') {
             steps {
                 sh ' sudo apt update && sudo apt install python3-pip -y'
